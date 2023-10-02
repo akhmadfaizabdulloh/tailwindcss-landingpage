@@ -1,0 +1,501 @@
+<!-- !Running taiwind terminal >>> $npm run dev -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilmu Komputer - Uniwara</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+  <body>
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 w-full flex items-center z-10 py-2">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div>
+            <img src="./img/logo-ilkom.png" alt="Logo Ilmu Komputer" class="w-[140px]"/>
+          </div>
+
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#profile"
+                    class="text-base text-black lg:text-white font-normal lg:font-semibold py-2 mx-8 flex group-hover:text-sky-500"
+                    >Profil prodi</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#visi"
+                    class="text-base text-black lg:text-white font-normal lg:font-semibold py-2 mx-8 flex group-hover:text-sky-500"
+                    >Visi & Misi</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#struktur"
+                    class="text-base text-black lg:text-white font-normal lg:font-semibold py-2 mx-8 flex group-hover:text-sky-500"
+                    >Struktur Prodi</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#galeri"
+                    class="text-base text-black lg:text-white font-normal lg:font-semibold py-2 mx-8 flex group-hover:text-sky-500"
+                    >Galeri</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-black lg:text-white font-normal lg:font-semibold py-2 mx-8 flex group-hover:text-sky-500"
+                    >Contact</a
+                  >
+                </li>
+                <li class="group py-4 px-8 lg:py-0 lg:px-0">
+                  <a href="https://uniwara.ac.id/" target="_blank" rel="noopener noreferrer" class="lg:hidden text-base font-semibold text-black bg-transparent py-2 px-8 rounded-lg hover:shadow-lg border-2 border-black hover:opacity-80 transition duration-300 ease-in-out hover:bg-black hover:text-white">Uniwara</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <a href="https://uniwara.ac.id/" target="_blank" rel="noopener noreferrer" class="hidden lg:flex text-base font-semibold lg:text-white bg-transparent py-2 px-8 rounded-lg hover:shadow-lg border border-white hover:opacity-80 transition duration-300 ease-in-out hover:bg-black">Uniwara</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-32 bg-dark lg:h-screen pb-9">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center text-center px-4">
+            <h1 class="block font-extrabold lg:font-extrabold text-white text-4xl lg:text-7xl mt-1">Program Studi<br>Ilmu Komputer</h1>
+            <p class="font-medium lg:text-xl text-white mt-5 mb-10 leading-relaxed">Computer Science Building A Better Tomorrow</p>
+            <a href="https://wa.me/6285755553388?text=Halo%20pak,%20saya%20ingin%20konsultasi%20terkait%20Pendaftaran%20Mahasiswa%20Baru%20Program%20Studi%20Ilmu%20Komputer." target="_blank" rel="noopener noreferrer" class="text-base font-bold text-black bg-gold py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Yuk Daftar Sekarang</a>
+            <div class="w-full self-center mt-11">
+              <div class="relative justify-center lg:pt-4">
+                <iframe class="w-full lg:w-[1016px] aspect-video rounded-3xl mx-auto border-2 lg:border-4 border-gold" src="https://www.youtube.com/embed/tWGkN3rkoBo?controls=0" title="Profile Program Studi Ilmu Komputer (UNIWARA)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+      
+    <!-- Profile Section Start -->
+    <section class="bg-whiteblue">
+      <div class="hidden lg:flex bg-dark pb-16"></div>
+      <div id="profile"  class="container">
+        <div class="flex flex-wrap pt-32 lg:pt-52">
+          <div class="w-full text-center px-5 lg:mt-24 pb-24 lg:px-44">
+            <h1 class="font-bold text-black text-2xl lg:text-4xl lg:mt-20 mb-5 ">Profil Program Studi<br>Ilmu Komputer</h1>
+            <p class="font-normal text-base lg:text-lg text-black leading-relaxed">
+              Program Studi Ilmu Komputer merupakan program studi unggulan yang lahir bersamaan dengan Fakultas Teknologi dan Sains beserta perubahan nama institusi dari STKIP-STIT PGRI Pasuruan menjadi Universitas PGRI Wiranegara. sesuai dengan surat keputusan Kementrian Pendidikan dan Kebudayaan yaitu a/n Mendikbud Sekretaris Jenderal nomor 259/M/2020. Program studi ini memiliki akreditasi “Baik” sejak 2021 hingga saat ini. Program studi Ilmu Komputer UNIWARA memfokuskan pembelajaran mahasiswa kepada kecerdasan buatan (Artificial Intelligence), Soft Engineering, dan Cyber security. Di mana para tenaga pengajar di datangkan dari tenaga profesional yang memiliki keahlian di bidang tersebut. Kemudian, suasana belajar yang ditunjang dengan berbagai fasilitas lab yang dapat dipergunakan oleh mahasiswa untuk dapat lebih memahami mengenai pembelajaran yang sedang dilakukan sehingga adanya keseimbangan yang diperoleh antara teori dan praktiknya.
+            </p>
+          </div>
+        </div>
+        <div class="px-4">
+          <hr class="w-full mx-auto border-t border-black">
+        </div>
+      </div>
+    </section>
+    <!-- Profile Section End -->
+      
+    <!-- Visi Misi Section Start -->
+    <section id="visi" class="bg-whiteblue pt-32 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2 bg-no-repeat bg-center">
+            <img src="./img/gerbang-uniwara.png" alt="Visi & Misi Image" class="mx-auto rounded-lg lg:w-[371px] lg:h-[567px] lg:bg-contain lg:bg-center lg:object-cover drop-shadow-2xl"/>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative text-center mt-10 lg:mt-9 lg:right-0">
+              <h1 class="font-bold text-dark text-2xl lg:text-2xl">Visi</h1>
+              <hr class="w-24 mx-auto border-t-4 border-dark mt-2.5 mb-6">
+              <p class="font-normal text-black text-base mb-10">
+                Menjadi Program Studi (Prodi) S1 Ilmu Komputer (ILKOM) yang memiliki keunggulan akademik dan profesional dalam bidang ilmu komputer yang berorientasi global, adaptif terhadap perkembangan teknologi dan informasi serta berjiwa patriotik.
+              </p>
+              <h1 class="font-bold text-dark text-2xl lg:text-2xl">Misi</h1>
+              <hr class="w-24 mx-auto border-t-4 border-dark mt-2.5 mb-6">
+              <ol class="space-y-1 list-decimal list-outside font-normal text-left text-black text-base pl-4">
+                <li>Menyelenggarakan pendidikan dalam bidang Ilmu Komputer yang unggul dan adaptif.</li>
+                <li>Menyelenggarakan penelitian di bidang Ilmu Komputer untuk kemanfaatan masyarakat pada tingkat regional, nasional maupun internasional.</li>
+                <li>Mengembangkan kegiatan pengabdian kepada masyarakat melalui penerapan ilmu pengetahuan dan teknologi dalam bidang ilmu komputer.</li>
+                <li>Komputer untuk kesejahteraan masyarakat, Meningkatkan kontribusi dan kerjasama dengan berbagai pihak dengan mengembangkan produk hasil inovasi dan kreasi di bidang teknologi informasi dan komputer di tingkat nasional maupun internasional.</li>
+                <li>Mengembangkan tata pamong dan tata kelola dalam bidang Ilmu Komputer yang kredibel, transparan, akuntabel, bertanggung jawab, dan adil.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Visi Misi Section End -->
+  
+    <!-- Struktur Organisasi Section Start -->
+    <section id="struktur" class="pt-32 pb-32 bg-dark">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-10">Struktur Organisasi Prodi</h2>
+            <div class="flex flex-wrap justify-center">
+              <div class="w-full mb-10">  
+                <img src="./img/dosen/pak-sapto.png" alt="Sapto Hadi Riono, S.Kom., M.Kom." class="mx-auto"/>
+                <p class="text-lg font-bold text-white text-center mt-5">Sapto Hadi Riono, S.Kom., M.Kom.</p>
+                <p class="text-sm italic text-white text-center mt-2.5">Ketua Program Studi</p>
+              </div>
+              <div class="w-full lg:w-1/3 mb-10 lg:order-last">  
+                <img src="./img/dosen/pak-rega.png" alt="Dimas Rega Hadiatullah, S.Si., M.Kom." class="mx-auto"/>
+                <p class="text-lg font-bold text-white text-center mt-5">Dimas Rega Hadiatullah, S.Si., M.Kom.</p>
+                <p class="text-sm italic text-white text-center mt-2.5">Sekretaris Program Studi</p>
+              </div>
+              <div class="w-full lg:w-1/3 mb-10">  
+                <img src="./img/dosen/bu-rosa.png" alt="Lafnidita Farosanti, S.Kom., M.Kom." class="mx-auto"/>
+                <p class="text-lg font-bold text-white text-center mt-5">Lafnidita Farosanti, S.Kom., M.Kom.</p>
+                <p class="text-sm italic text-white text-center mt-2.5">Ka. Perpustakaan Program Studi
+                </p>
+              </div>
+              <div class="w-full lg:w-1/3 mb-10">  
+                <img src="./img/dosen/bu-rizda.png" alt="Rizdania, S.T., M.Kom." class=" mx-auto"/>
+                <p class="text-lg font-bold text-white text-center mt-5">Rizdania, S.T., M.Kom.</p>
+                <p class="text-sm italic text-white text-center mt-2.5">Satuan Penjaminan Mutu (SPM) Program Studi</p>
+              </div>
+              <div class="w-full lg:w-1/3 mb-10">  
+                <img src="./img/dosen/bu-tammy.png" alt="Puji Utami Rohmawati, S.Kom., M.Kom" class="mx-auto"/>
+                <p class="text-lg font-bold text-white text-center mt-5">Puji Utami Rohmawati, S.Kom., M.Kom.</p>
+                <p class="text-sm italic text-white text-center mt-2.5">Ka. Laboratorium Program Studi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Struktur Organisasi Section End -->
+  
+    <!-- Galeri Section Start -->
+    <section id="galeri" class="bg-whiteblue pt-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full text-center px-4">
+            <h2 class="font-bold text-black text-2xl lg:text-4xl mb-10">Galeri Ilmu Komputer</h2>
+            <div class="grid lg:grid-cols-3 gap-3 mb-3 px-4">
+              <div class="flex flex-col gap-3">
+                <div>
+                  <img src="./img/galeri/ilkom-2020a.png" alt="Ilkom 2020(A)" class="rounded-lg">
+                </div>
+                <div>
+                  <img src="./img/galeri/ilkom-2020b.png" alt="Ilkom 2020(B)" class="rounded-lg">
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div>
+                  <img src="./img/galeri/ilkom-2021a.png" alt="Ilkom 2021(A)" class="rounded-lg">
+                </div>
+                <div>
+                  <img src="./img/galeri/ilkom-2021b.png" alt="Ilkom 2021(B)" class="rounded-lg">
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 lg:order-first">
+                <div class="">
+                  <img src="./img/galeri/ilkom-2022a.png" alt="Ilkom 2022(A)" class="rounded-lg">
+                </div>
+                <div>
+                  <img src="./img/galeri/ilkom-2022b.png" alt="Ilkom 2022(B)" class="rounded-lg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 pt-32">
+        <hr class="w-full mx-auto border-t border-black">
+      </div>
+    </section>
+    
+    <!-- Galeri Section End -->
+  
+    <!-- Lokasi Section Start -->
+    <section id="contact" class="bg-whiteblue pt-32 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-start px-4 lg:w-1/2 order-last lg:order-none">
+            <div>
+              <iframe class="rounded-lg h-[212px] lg:w-[600px] lg:h-[450px]" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3954.1332087776887!2d112.902448!3d-7.668825000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7cf34bd308eb3%3A0xcc34d98d2f0b7a9e!2sIlmu%20Komputer%20Universitas%20PGRI%20Wiranegara!5e0!3m2!1sid!2sid!4v1681808903217!5m2!1sid!2sid" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2 mb-10 lg:mb-0">
+            <h1 class="font-bold text-black text-2xl lg:text-4xl mb-4">Hubungi Kami</h1>
+            <p class="font-normal text-base text-black mb-12">Mari bergabung dan ikut serta dalam mewujudkan visi dan misi bersama kami.</p>
+  
+            <div class="mb-6 flex">
+              <div class="mr-6">
+                <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="55" height="56" rx="26.5" fill="white"/>
+                  <g clip-path="url(#clip0_723_300)">
+                  <path d="M35.5 37.0002C35.418 37.0002 35.336 36.9862 35.258 36.9602L15.508 30.2102C15.224 30.1122 15.026 29.8562 15.002 29.5572C14.98 29.2582 15.137 28.9742 15.402 28.8352L37.902 17.0852C38.153 16.9562 38.456 16.9762 38.684 17.1392C38.914 17.3032 39.033 17.5812 38.992 17.8612L36.242 36.3612C36.209 36.5812 36.08 36.7752 35.889 36.8912C35.771 36.9632 35.636 37.0002 35.5 37.0002ZM17.646 29.3552L34.89 35.2492L37.291 19.0972L17.646 29.3552Z" fill="#002366"/>
+                  <path d="M24.5 40.0002C24.422 40.0002 24.343 39.9882 24.267 39.9632C23.958 39.8612 23.75 39.5742 23.75 39.2502V32.5002C23.75 32.3112 23.822 32.1272 23.951 31.9882L37.701 17.2382C37.983 16.9342 38.46 16.9192 38.762 17.2012C39.065 17.4832 39.081 17.9582 38.799 18.2622L25.25 32.7952V36.9632L27.753 33.5562C27.998 33.2242 28.468 33.1502 28.802 33.3962C29.136 33.6412 29.207 34.1112 28.962 34.4452L25.105 39.6952C24.96 39.8902 24.734 40.0002 24.5 40.0002Z" fill="#002366"/>
+                  </g>
+                  <rect x="0.5" y="0.5" width="55" height="56" rx="26.5" stroke="#002366"/>
+                  <defs>
+                  <clipPath id="clip0_723_300">
+                  <rect width="24" height="24" fill="white" transform="translate(15 17)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div>
+                <p class="mb-2 text-md font-bold text-neutral-900">Email</p>
+                <p class="text-base font-normal text-gray">ilmukomputer.uniwara@<span class="md:hidden"> </span>gmail.com</p>
+              </div>
+            </div>
+  
+            <div class="mb-6 flex">
+              <div class="mr-6">
+                <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="55" height="56" rx="26.5" fill="white"/>
+                  <path d="M31.0499 21C32.0267 21.1906 32.9243 21.6683 33.628 22.3719C34.3317 23.0756 34.8094 23.9733 34.9999 24.95M31.0499 17C33.0792 17.2254 34.9715 18.1342 36.4162 19.577C37.8608 21.0198 38.7719 22.911 38.9999 24.94M37.9999 32.92V35.92C38.0011 36.1985 37.944 36.4742 37.8324 36.7293C37.7209 36.9845 37.5572 37.2136 37.352 37.4019C37.1468 37.5901 36.9045 37.7335 36.6407 37.8227C36.3769 37.9119 36.0973 37.9451 35.8199 37.92C32.7428 37.5856 29.7869 36.5341 27.1899 34.85C24.7738 33.3147 22.7253 31.2662 21.1899 28.85C19.4999 26.2412 18.4482 23.271 18.1199 20.18C18.0949 19.9035 18.1278 19.6248 18.2164 19.3616C18.3051 19.0985 18.4475 18.8567 18.6347 18.6516C18.8219 18.4466 19.0497 18.2827 19.3037 18.1705C19.5577 18.0583 19.8323 18.0003 20.1099 18H23.1099C23.5952 17.9952 24.0657 18.1671 24.4337 18.4835C24.8017 18.8 25.042 19.2394 25.1099 19.72C25.2366 20.6801 25.4714 21.6227 25.8099 22.53C25.9445 22.8879 25.9736 23.2769 25.8938 23.6509C25.8141 24.0248 25.6288 24.3681 25.3599 24.64L24.0899 25.91C25.5135 28.4135 27.5864 30.4864 30.0899 31.91L31.3599 30.64C31.6318 30.3711 31.9751 30.1858 32.3491 30.1061C32.723 30.0263 33.112 30.0555 33.4699 30.19C34.3772 30.5286 35.3199 30.7634 36.2799 30.89C36.7657 30.9585 37.2093 31.2032 37.5265 31.5775C37.8436 31.9518 38.0121 32.4296 37.9999 32.92Z" stroke="#002366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="0.5" y="0.5" width="55" height="56" rx="26.5" stroke="#002366"/>
+                </svg>    
+              </div>
+              <div>
+                <p class="mb-2 text-md font-bold text-neutral-900">Hubungi</p>
+                <p class="text-base font-normal text-gray">Office : (0343) 421948</p>
+                <p class="text-base font-normal text-gray">WA: +62 857 5555 3388</p>
+              </div>
+            </div>
+  
+            <div class="mb-6 flex">
+              <div class="mr-6">
+                <svg width="54" height="55" viewBox="0 0 54 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" y="0.5" width="53" height="54" rx="26.5" fill="white"/>
+                  <g clip-path="url(#clip0_723_315)">
+                  <path d="M38.9423 38.0162L34.7073 28.1354C34.5959 27.876 34.3407 27.7077 34.0585 27.7077H31.3689C32.4575 25.806 33.3527 23.7012 33.3527 21.9203C33.3527 12.7493 20.6473 12.6374 20.6473 21.9203C20.6473 23.7012 21.5425 25.806 22.6311 27.7077H19.9415C19.6591 27.7077 19.4039 27.876 19.2927 28.1354L15.0577 38.0162C14.8585 38.4809 15.1998 39 15.7064 39H38.2936C38.7991 39 39.1419 38.482 38.9423 38.0162ZM33.5929 29.1193L35.6827 33.9946C35.6173 34.0287 28.8157 37.5606 28.767 37.5884H27.2895C27.2521 37.5467 27.5696 37.8658 22.9693 33.266L25.5245 31.9583C26.0455 32.6232 26.4104 33.0456 26.4673 33.1111C26.7486 33.4349 27.2516 33.4343 27.5325 33.1111C27.6506 32.9753 29.0894 31.3081 30.5068 29.1193H33.5929ZM27 16.4152C29.3796 16.4152 31.9409 18.1381 31.9409 21.9203C31.9409 25.1005 28.376 29.8332 27 31.5412C25.624 29.833 22.0591 25.1005 22.0591 21.9203C22.0591 18.1175 24.5405 16.4152 27 16.4152ZM20.4069 29.1193C23.8262 29.1193 23.4377 29.1198 23.4924 29.1182C23.89 29.7321 24.2891 30.305 24.6605 30.8148L18.2807 34.08L20.4069 29.1193ZM17.41 36.1113L21.6489 33.9419L25.296 37.5884H16.7769L17.41 36.1113ZM31.8263 37.5884L36.2404 35.2956L37.2231 37.5884H31.8263Z" fill="#002366"/>
+                  <path d="M29.1174 21.3557C29.1174 20.1882 28.1674 19.2383 26.9999 19.2383C25.8323 19.2383 24.8823 20.1882 24.8823 21.3557C24.8823 22.5232 25.8323 23.473 26.9999 23.473C28.1674 23.473 29.1174 22.5232 29.1174 21.3557ZM26.2941 21.3557C26.2941 20.9664 26.6107 20.6498 26.9999 20.6498C27.389 20.6498 27.7058 20.9664 27.7058 21.3557C27.7058 21.7448 27.389 22.0614 26.9999 22.0614C26.6107 22.0614 26.2941 21.7448 26.2941 21.3557Z" fill="#002366"/>
+                  </g>
+                  <rect x="0.5" y="0.5" width="53" height="54" rx="26.5" stroke="#002366"/>
+                  <defs>
+                  <clipPath id="clip0_723_315">
+                  <rect width="24" height="24" fill="white" transform="translate(15 15)"/>
+                  </clipPath>
+                  </defs>
+                </svg>   
+              </div>
+              <div>
+                <p class="mb-2 text-md font-bold text-neutral-900">Kunjungi Kami</p>
+                <p class="text-base font-normal text-gray">Jl. Ki Hajar Dewantara No.27, Tembokrejo, Kec. Purworejo, Kota Pasuruan, Jawa Timur 67118</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lokasi Section End -->
+  
+    <!-- Footer Start -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/5">
+            <img src="./img/logo-ilkom.png" alt="Logo Ilmu Komputer" class="w-[140px]"/>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/5">
+            <h3 class="font-semibold text-xl text-white mb-5">Layanan Mahasiswa</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="https://student.wiraakademik.uniwara.ac.id:8083/" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">Student Wiraakademik</a>
+              </li>
+              <li>
+                <a href="http://wiramerdeka.uniwara.ac.id:8081/" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">Wiramerdeka MBKM</a>
+              </li>
+              <li>
+                <a href="https://uniwara.ac.id/pusatunitcustem/P4" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">Perpustakaan</a>
+              </li>
+              <li>
+                <a href="https://uniwara.ac.id/Calender" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">Calender Akademik</a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/12N-il3G5Blj26Cy5IMxUNMw3b0oIwjqG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">Jadwal Ilmu Komputer</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/5">
+            <h3 class="font-semibold text-xl text-white mb-5">Lembaga</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="https://uniwara.ac.id/" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">Website Uniwara</a>
+              </li>
+              <li>
+                <a href="https://ojs.uniwara.ac.id/" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">JurnalUniwara</a>
+              </li>
+              <li>
+                <a href="https://rep.uniwara.ac.id/" target="_blank" rel="noopener noreferrer" class="inline-block text-base hover:text-sky-500 mb-3">Repository</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/5">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a href="#home" class="inline-block text-base hover:text-sky-500 mb-3">Beranda</a>
+              </li>
+              <li>
+                <a href="#profile" class="inline-block text-base hover:text-sky-500 mb-3">Profil Prodi</a>
+              </li>
+              <li>
+                <a href="#visi" class="inline-block text-base hover:text-sky-500 mb-3">Visi & Misi</a>
+              </li>
+              <li>
+                <a href="#struktur" class="inline-block text-base hover:text-sky-500 mb-3">Struktur Prodi</a>
+              </li>
+              <li>
+                <a href="#galeri" class="inline-block text-base hover:text-sky-500 mb-3">Galeri</a>
+              </li>
+              <li>
+                <a href="#contact" class="inline-block text-base hover:text-sky-500 mb-3">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/5">
+            <h3 class="font-semibold text-xl text-white mb-5">Follow Kami</h3>
+            <div class="flex mb-5">
+              <!-- Youtube -->
+              <a
+                href="https://www.youtube.com/@ilkomuniwara5331"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-500 hover:border-primary hover:bg-sky-500 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+    
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/ilkom_uniwara/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-500 hover:border-primary hover:bg-sky-500 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+    
+              <!-- Facebook -->
+              <a
+                href="https://facebook.com/Uniwara.warawara"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-500 hover:border-primary hover:bg-sky-500 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h3 class="font-semibold text-xl text-white mb-5">Support By</h3>
+            <div class="flex mb-5">
+              <!-- Himaster -->
+              <a
+                href="https://www.instagram.com/himaster_uniwara/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-500 hover:border-primary hover:bg-sky-500 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Himaster</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+    
+              <!-- PasuruanDev -->
+              <a
+                href="https://www.instagram.com/pasuruan.dev/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-500 hover:border-primary hover:bg-sky-500 hover:text-white"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>PasuruanDev</title>
+                  <path
+                  d="M4.645 7.472c2.1.53 4.779.8 8.008.8 3.299 0 5.918-.27 8.008-.8 2.23-.52 3.299-1.22 3.299-1.88 0-.47-.48-.93-1.35-1.28.2.13.35.35.35.59 0 .67-1.01 1.22-3.039 1.68-1.88.41-4.279.7-7.198.7-2.82 0-5.329-.29-7.138-.68-1.95-.48-2.97-1-2.97-1.68 0-.28.13-.52.52-.8-1.22.47-1.88.87-1.88 1.47.07.68 1.16 1.36 3.39 1.88zm4.689-2.16c2.27-.2 2.929-1.659 5.588-1.899 1.31-.1 2.14.16 2.23.62.08.43-.57.72-1.36.78-1.09.11-1.54-.28-1.63-.65-.81.09-.94.43-.9.67.09.46 1.07.92 2.75.76 1.9-.15 2.54-.9 2.38-1.65-.2-.98-1.66-1.8-4.28-1.55-3.359.3-3.339 1.86-5.628 2.05-.94.09-1.46-.13-1.55-.5-.06-.37.4-.55.94-.59.5-.05 1.11.04 1.4.2.21-.11.28-.22.26-.35-.1-.35-.79-.5-1.66-.44-1.7.15-1.7.91-1.64 1.25.17.87 1.48 1.45 3.1 1.3zm11.417 3.84c-2.1.49-4.779.809-8.008.809-3.3 0-5.989-.34-8.078-.8-1.88-.48-2.88-1.01-3.23-1.56.18 1.23.49 2.42.89 3.55-.48.3-.91.67-1.3 1.17a4.519 4.519 0 00-1.019 3.098 3.6 3.599 0 001.42 2.62c.87.68 1.81.88 2.879.68.41-.07.87-.28 1.29-.42-.88 0-1.62-.28-2.36-.87a3.55 3.549 0 01-1.49-2.42c-.2-.94 0-1.81.53-2.579.12-.15.25-.28.39-.4.3.73.62 1.45.98 2.12.81 1.23 1.62 2.299 2.43 3.459.35.68.58 1.35.74 2.019a3.899 3.899 0 002.229 1.5c1.15.4 2.35.58 3.579.51h.13a10.197 10.197 0 003.689-.52 4.179 4.179 0 002.16-1.49h.07c.13-.67.35-1.34.67-2.02.799-1.17 1.619-2.229 2.419-3.458A20.995 20.993 0 0024 7.612c-.43.6-1.44 1.13-3.25 1.54z"/>
+                </svg>
+              </a>
+  
+            </div>
+          </div>
+        </div>
+  
+        <div class="w-full pt-10 border-t border-slate-700">
+          <p class="font-medium text-xs text-slate-500 text-center">Dibuat dengan <span class="text-pink-500">♥</span> oleh <a href="https://www.linkedin.com/in/akhmad-faiz-abdulloh/" target="_blank" class="font-bold text-sky-500">Akhmad Faiz Abdulloh</a>, support by <a href="https://pasuruan.dev/" target="_blank" class="font-bold text-orange-400">PasuruanDev</a>.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  
+    <script src="./js/script.js"></script>
+        
+  </body>
+  </html>
