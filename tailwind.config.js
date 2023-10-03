@@ -20,6 +20,7 @@ module.exports = {
       },
       fontFamily: {
         'Poppins': ['Poppins', 'san-serif'],
+        'Gilroy' : ['Gilroy', 'san-serif'],
       },
     },
   },

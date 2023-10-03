@@ -718,6 +718,10 @@ video {
   width: 6rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .w-9 {
   width: 2.25rem;
 }
@@ -726,16 +730,20 @@ video {
   width: 140px;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[74px\] {
   width: 74px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-\[250px\] {
   max-width: 250px;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 
 .origin-bottom-left {
@@ -873,6 +881,11 @@ video {
   background-color: rgb(0 35 102 / var(--tw-bg-opacity));
 }
 
+.bg-darkestgreen {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 65 68 / var(--tw-bg-opacity));
+}
+
 .bg-gold {
   --tw-bg-opacity: 1;
   background-color: rgb(208 168 75 / var(--tw-bg-opacity));
@@ -881,6 +894,11 @@ video {
 .bg-sky-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity));
+}
+
+.bg-sky-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -895,11 +913,6 @@ video {
 .bg-whiteblue {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.bg-darkestgreen {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 65 68 / var(--tw-bg-opacity));
 }
 
 .bg-local {
@@ -999,6 +1012,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-Gilroy {
+  font-family: Gilroy, san-serif;
 }
 
 .text-2xl {
@@ -1148,6 +1165,57 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+  font-family: "Gilroy";
+
+  src: url("/fonts/Gilroy-ExtraBold.otf") format("otf");
+}
+
+/* @font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Roboto-Black.ttf") format("ttf");
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.7;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-line {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  height: 2px;
+  width: 30px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hamburger-active > span:nth-child(1) {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hamburger-active > span:nth-child(2) {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hamburger-active > span:nth-child(3) {
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:border-primary:hover {
@@ -1317,6 +1385,11 @@ video {
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
   .lg\:px-44 {
