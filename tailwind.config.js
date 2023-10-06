@@ -19,7 +19,6 @@ module.exports = {
         '2xl': '1320px',
       },
       fontFamily: {
-        'Poppins': ['Poppins', 'san-serif'],
         'Gilroy' : ['Gilroy', 'san-serif'],
       },
     },

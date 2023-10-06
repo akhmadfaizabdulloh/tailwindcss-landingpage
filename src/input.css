@@ -2,19 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@100&display=swap');
+
+  /* @import url('./fonts/Gilroy-ExtraBold.ttf'); */
+
+/* @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/Gilroy-ExtraBold.otf") format("otf");
-}
+  src: url("../public/fonts/Gilroy-ExtraBold.ttf") format("ttf");
+} */
+
+/* @font-face {
+  font-family: 'Gilroy';
+  src: url(./fonts/Gilroy-ExtraBold.ttf);
+} */
+
+/* @font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Light.otf") format("otf");
+} */
 
 /* @font-face {
   font-family: "Gilroy";
   src: url("/fonts/Roboto-Black.ttf") format("ttf");
 } */
 
-body {
+/* body {
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 
 .navbar-fixed{

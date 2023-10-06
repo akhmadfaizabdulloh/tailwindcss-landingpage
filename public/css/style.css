@@ -1167,20 +1167,31 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@font-face {
-  font-family: "Gilroy";
+/* @import url('./fonts/Gilroy-ExtraBold.ttf'); */
 
-  src: url("/fonts/Gilroy-ExtraBold.otf") format("otf");
-}
+/* @font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/Gilroy-ExtraBold.ttf") format("ttf");
+} */
+
+/* @font-face {
+  font-family: 'Gilroy';
+  src: url(./fonts/Gilroy-ExtraBold.ttf);
+} */
+
+/* @font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Light.otf") format("otf");
+} */
 
 /* @font-face {
   font-family: "Gilroy";
   src: url("/fonts/Roboto-Black.ttf") format("ttf");
 } */
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
+/* body {
+    font-family: 'Poppins', sans-serif;
+} */
 
 .navbar-fixed {
   position: fixed;
