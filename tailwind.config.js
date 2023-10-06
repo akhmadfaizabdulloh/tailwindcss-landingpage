@@ -19,7 +19,7 @@ module.exports = {
         '2xl': '1320px',
       },
       fontFamily: {
-        'Gilroy' : ['Gilroy', 'san-serif'],
+        'Inter' : ['Inter', 'san-serif'],
       },
     },
   },

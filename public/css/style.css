@@ -580,6 +580,15 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .left-1\/2 {
   left: 50%;
 }
@@ -598,6 +607,42 @@ video {
 
 .top-full {
   top: 100%;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.right-3\.5 {
+  right: 0.875rem;
+}
+
+.bottom-full {
+  bottom: 100%;
+}
+
+.-top-full {
+  top: -100%;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .z-10 {
@@ -784,6 +829,14 @@ video {
   flex-wrap: wrap;
 }
 
+.place-content-center {
+  place-content: center;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -794,6 +847,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-3 {
@@ -816,6 +873,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .rounded-3xl {
@@ -846,6 +907,10 @@ video {
   border-top-width: 4px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -874,6 +939,10 @@ video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-slate-100\/10 {
+  border-color: rgb(241 245 249 / 0.1);
 }
 
 .bg-dark {
@@ -913,6 +982,24 @@ video {
 .bg-whiteblue {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-\[transparent\] {
+  background-color: transparent;
+}
+
+.bg-\[\#FFFFFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100\/10 {
+  background-color: rgb(241 245 249 / 0.1);
 }
 
 .bg-local {
@@ -966,6 +1053,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1012,10 +1104,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.font-Gilroy {
-  font-family: Gilroy, san-serif;
 }
 
 .text-2xl {
@@ -1269,6 +1357,10 @@ video {
   color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:opacity-80 {
+  opacity: 0.8;
+}
+
 @media (min-width: 768px) {
   .md\:hidden {
     display: none;
@@ -1457,6 +1549,15 @@ video {
   .lg\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .lg\:text-slate-100 {
+    --tw-text-opacity: 1;
+    color: rgb(241 245 249 / var(--tw-text-opacity));
+  }
+
+  .lg\:text-slate-100\/10 {
+    color: rgb(241 245 249 / 0.1);
   }
 
   .lg\:shadow-none {
