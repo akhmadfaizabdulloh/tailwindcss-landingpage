@@ -26,9 +26,9 @@
   src: url("/fonts/Roboto-Black.ttf") format("ttf");
 } */
 
-/* body {
-    font-family: 'Poppins', sans-serif;
-} */
+body {
+    font-family: 'Inter', sans-serif;
+}
 
 
 .navbar-fixed{
