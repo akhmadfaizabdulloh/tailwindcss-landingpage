@@ -928,11 +928,6 @@ video {
   background-color: rgb(208 168 75 / var(--tw-bg-opacity));
 }
 
-.bg-sky-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(125 211 252 / var(--tw-bg-opacity));
-}
-
 .bg-slate-100\/10 {
   background-color: rgb(241 245 249 / 0.1);
 }
@@ -961,10 +956,6 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.bg-repeat-y {
-  background-repeat: repeat-y;
 }
 
 .fill-current {
