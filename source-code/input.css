@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        @apply font-lato overflow-x-hidden;
+    }
+
+    .btn-primary {
+        @apply bg-primary w-full py-4 rounded-lg text-white font-bold;
+    }
+    .btn {
+        @apply w-full py-4 rounded-lg font-bold;
+    }
+    .btn-outline {
+        @apply btn bg-transparent border-solid border-2;
+    }
+    .btn-secondary {
+        @apply btn-outline border-primary text-primary;
+    }
+    .btn-danger {
+        @apply btn bg-red-primary text-white;
+    }
+    .btn-light-outline {
+        @apply btn-outline border-white text-white;
+    }
+    .btn-danger-outline {
+        @apply bg-transparent border-solid border-2 border-red-primary w-full py-4 rounded-lg text-red-primary font-bold;
+    }
+    .input-text {
+        @apply bg-neutral-100 focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 mt-4 rounded-md shadow-sm w-full py-3 px-6;
+    }
+    .input-error {
+        @apply bg-neutral-100 focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-50 mt-4 rounded-md shadow-sm w-full py-3 px-6 outline outline-2 outline-red-500;
+    }
+
+    .card-content {
+        @apply bg-white p-3 rounded-b-lg;
+    }
+    .card-content.card-shadow {
+        @apply shadow-lg mb-1;
+    }
+    .card-title {
+        @apply text-sm font-extrabold text-primary truncate;
+    }
+    .card-subtitle {
+        @apply text-sm font-medium text-neutral-900 truncate;
+    }
+    .card-caption {
+        @apply text-xs text-neutral-500 mt-3 truncate;
+    }
+
+    .bottom-nav {
+        @apply block fixed bottom-0 inset-x-0 z-50 bg-white text-gray-800 mt-4 pb-2 shadow-bottom-nav;
+    }
+    .tabs-item {
+        @apply w-full justify-center inline-block text-center pt-2 pb-1 hover:bg-neutral-100;
+    }
+
+    .modal-content {
+        @apply bg-primary text-white py-6 px-12 fixed z-50 flex flex-col items-center rounded-2xl;
+    }
+    .modal-backdrop {
+        @apply fixed w-full h-full top-0 bg-gray-600 z-40 opacity-60;
+    }
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
