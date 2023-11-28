@@ -95,7 +95,17 @@
 
             <div class="w-full self-center mt-11">
               <div class="relative justify-center lg:pt-4">
-                <iframe class="w-full lg:w-[1016px] aspect-video mx-auto border-rose-500 border-2 lg:border-4" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <video id="myVideo" class="w-full lg:w-[1016px] mx-auto aspect-video" poster="./video/hero-thumbnail.png" controls>
+                  <source src="./video/hero.mp4" type="video/mp4"/>
+                </video>
+
+                <button id="playPauseBtn" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-white px-3 py-3 lg:px-4 lg:py-4 rounded-full inline-flex items-center">
+                  <img src="/public/asset/play-circle.svg" alt="Chat">
+                </button>
+
+
+                <!-- <iframe class="w-full lg:w-[1016px] aspect-video mx-auto border-rose-500 border-2 lg:border-4" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
               </div>
             </div>
           </div>
@@ -365,7 +375,7 @@
     <!-- Collab Section End -->
 
     <!-- Words Section Start -->
-    <section id="project" class="md:h-screen">
+    <section id="project" class="pb-9 md:h-screen">
       <div class="container lg:px-16">
         <div class="flex flex-wrap">
           <div class="w-full px-4 self-center text-center">
