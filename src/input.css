@@ -34,7 +34,7 @@
 
 
   .card-content {
-      @apply bg-white p-3 rounded-b-lg;
+      @apply bg-white p-5;
   }
 
   .card-content.card-shadow {
@@ -42,11 +42,11 @@
   }
   
   .card-title {
-      @apply text-sm font-extrabold text-primary truncate;
+      @apply text-lg font-bold text-black truncate;
   }
 
   .card-subtitle {
-      @apply text-sm font-medium text-neutral-900 truncate;
+      @apply text-base font-normal text-gray-400 truncate;
   }
 
   .card-caption {
