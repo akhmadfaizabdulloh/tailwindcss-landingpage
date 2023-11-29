@@ -34,7 +34,7 @@
 
 
   .card-content {
-      @apply bg-white p-5;
+      @apply bg-white p-5 shadow-2xl;
   }
 
   .card-content.card-shadow {
