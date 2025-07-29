@@ -3,8 +3,8 @@
 ---
 
 ## Daftar Isi
-- [English Version : Usage and Installation Guide](#usage-and-installation-guide)
-- [Versi Bahasa Indonesia : Panduan Penggunaan dan Instalasi](#panduan-penggunaan-dan-instalasi)
+- [English Version : Usage and Installation Guide](#-usage-and-installation-guide)
+- [Versi Bahasa Indonesia : Panduan Penggunaan dan Instalasi](#-panduan-penggunaan-dan-instalasi)
 
 ---
 
