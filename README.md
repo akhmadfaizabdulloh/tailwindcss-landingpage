@@ -2,7 +2,7 @@
 
 ---
 
-## Daftar Isi
+## List of contents
 - [English Version : Usage and Installation Guide](#-usage-and-installation-guide)
 - [Versi Bahasa Indonesia : Panduan Penggunaan dan Instalasi](#-panduan-penggunaan-dan-instalasi)
 
