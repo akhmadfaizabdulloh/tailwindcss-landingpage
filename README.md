@@ -1,4 +1,4 @@
-# YiBi Creative Digital Agency Landing Page
+# YiBi - Creative Digital Agency Landing Page
 
 ---
 
@@ -93,7 +93,7 @@ With this step, the website will use a lighter and more efficient version of CSS
 [The GNU GPL License](https://www.gnu.org/licenses/gpl-3.0.en.html) for **YiBi Creative Digital Agency Landing Page**  allows free modification and use for both personal and commercial purposes. However, redistributing or reselling the template code without written permission from the owner is **strictly prohibited**.
 
 ### 7. Contact
-If you have any questions or need assistance, feel free to contact me [here](https://api.whatsapp.com/send/?phone=6288235518211) or via [email](codewithfz@gmail.com).
+If you have any questions or need assistance, feel free to contact me [here](https://www.instagram.com/codewithfz) or via [email](codewithfz@gmail.com).
 
 Thank you for choosing the **YiBi Creative Digital Agency Landing Page**! I hope this template helps you create an outstanding website.
 
@@ -118,7 +118,6 @@ Berikut adalah struktur folder utama dalam template ini:
 yibi-landingpage/
 ├── public/               # Aset publik
 │   ├── css/              # File CSS
-│   │   ├── output.css    # Output Tailwind (watch mode)
 │   │   ├── style.css     # CSS hasil development atau build 
 │   ├── img/              # Gambar dan ikon
 │   ├── js/               # File JavaScript
@@ -144,7 +143,7 @@ Untuk mengganti gambar, lakukan langkah berikut:
 2. Ubah sumber gambar di file ```public/index.html``` dengan mengganti nilai atribut src pada elemen ```<img>```.
 
 ```bash
-<img src="img/namagambar.png" alt="Gambar 1">
+<img src="img/nama-gambar.png" alt="Gambar 1">
 ```
 
 ### 4. Mengubah atau menyesuaikan template
@@ -192,7 +191,7 @@ Dengan langkah ini, website akan menggunakan versi CSS yang lebih ringan dan efi
 [Lisensi Penggunaan GNU GPL](https://www.gnu.org/licenses/gpl-3.0.en.html) untuk **YiBi Creative Digital Agency Landing Page**  ini, memungkinkan penyuntingan dan penggunaan secara bebas, baik untuk keperluan pribadi maupun komersial. Namun, **dilarang keras** menjual kembali atau mendistribusikan ulang kode template ini tanpa izin tertulis dari pemiliknya.
 
 ### 7. Kontak
-Jika kamu memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi saya [di sini](https://api.whatsapp.com/send/?phone=6288235518211) atau [email](codewithfz@gmail.com).
+Jika kamu memiliki pertanyaan atau membutuhkan bantuan, jangan ragu untuk menghubungi saya [di sini](https://www.instagram.com/codewithfz) atau [email](codewithfz@gmail.com).
 
 Terima kasih telah memilih **YiBi Creative Digital Agency Landing Page**! Saya berharap kamu dapat membuat website yang luar biasa dengan bantuan template ini.
 
